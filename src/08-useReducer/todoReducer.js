@@ -1,8 +1,8 @@
 
-export const todoReducer = (initialState, action) => {
+export const todoReducer = (initialState =[], action) => {
 
 
-  switch (key) {
+  switch (action.type) {
     case 'ABC':
       throw new Error('Action.type = ABC no esta implementada')
       
