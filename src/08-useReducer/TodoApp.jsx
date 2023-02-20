@@ -19,8 +19,12 @@ const initialState = [
 export const TodoApp = () => {
   const [todos, dispatch] = useReducer(todoReducer, initialState);
 
-  const handleNewTodo = () => {
-    console.log();
+  const handleNewTodo = (todo) => {
+    const action = {
+      type: "[TODO] Add Todo",
+      payload: todo
+    };
+    dispatch(action)
   };
 
   return (
@@ -37,7 +41,7 @@ export const TodoApp = () => {
         <div>
           <h4>Agregar TODO</h4>
           <hr />
-          <TodoAdd />
+          <TodoAdd onNewTodo={handleNewTodo} />
         </div>
       </div>
     </>
