@@ -43,3 +43,4 @@ export const useTodos = () => {
     pendingTodosCount: todos.filter((todo) => !todo.done).length,
   };
 };
+//comentario para borrar
