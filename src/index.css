@@ -6,3 +6,6 @@ body {
 button {
   margin-right: 10px;
 }
+.done-toggle {
+  text-decoration: line-through;
+}

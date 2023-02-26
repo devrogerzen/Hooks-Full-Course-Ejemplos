@@ -1,10 +1,12 @@
 import React from "react";
 
-export const TodoItems = ({ todo }) => {
+export const TodoItems = ({ todo, onDeleteTodo, onToggleTodo }) => {
   return (
     <li>
-      <span>{todo.description}</span>
-      <button>Borrar</button>
+      <span className={`${todo.done && "done-toggle"}`} onClick={() => onToggleTodo(todo.id)}>
+        {todo.description}
+      </span>
+      <button onClick={() => onDeleteTodo(todo.id)}>Borrar</button>
     </li>
   );
 };

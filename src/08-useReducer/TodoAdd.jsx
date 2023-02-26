@@ -13,7 +13,7 @@ export const TodoAdd = ({ onNewTodo }) => {
     const newTodo = {
       id: new Date().getTime(),
       description,
-      donde: false,
+      done: false,
     };
 
     onNewTodo(newTodo);
