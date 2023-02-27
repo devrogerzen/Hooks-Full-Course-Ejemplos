@@ -9,3 +9,7 @@ button {
 .done-toggle {
   text-decoration: line-through;
 }
+
+.navlink {
+  text-decoration: none;
+}
